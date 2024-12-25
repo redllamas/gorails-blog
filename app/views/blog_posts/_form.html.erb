@@ -12,12 +12,12 @@
         <%= form.text_field :title %>
     </div>
     <div>
-        <%= form.label :body %>
-        <%= form.text_area :body %>
+        <%= form.label :content %>
+        <%= form.rich_text_area :content %>
     </div>
     <div>
         <%= form.label :published_at %>
         <%= form.datetime_select :published_at, include_blank: true %>
     </div>
-    <%= form.button %>
+    <%= form.button class: "bg-blue-500 text-white p-2 rounded my-5" %>
 <% end %>

@@ -26,10 +26,11 @@
   <body class="prose mx-auto">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div>
+    <div class="flex pb-5">
       <% if user_signed_in? %>
-        <%= link_to "New post", new_blog_post_path %>
-        <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+        <%= link_to "Home", blog_posts_path, class: "bg-blue-500 text-white p-2 rounded mr-5" %>
+        <%= link_to "New post", new_blog_post_path, class: "bg-blue-500 text-white p-2 rounded mr-5" %>
+        <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "bg-gray-200 text-blue-500 p-2 border rounded" %>
       <%# else %>
         <%# link_to "Login", new_user_session_path %>
         <%# link_to "Sign up", new_user_registration_path %>
