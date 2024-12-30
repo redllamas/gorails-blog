@@ -69,3 +69,5 @@ gem "tailwindcss-rails", "~> 3.0"
 
 gem "rails-i18n", "~> 8.0"
 gem "aws-sdk-s3", require: false
+
+gem "pagy", "~> 9.3"
